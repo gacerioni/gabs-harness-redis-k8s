@@ -25,8 +25,8 @@ service:
   nodePort: 30099
 
 # this is a default pwd, but we will override with Harness capabilities (no vendor lockin, just values yaml overrides)
-#master:
-#  password: "secret42"
+master:
+  password: ""
 persistence:
   enabled: true
 
