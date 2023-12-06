@@ -3,6 +3,16 @@ entries:
   gabs-redis-harness:
   - apiVersion: v2
     appVersion: 7.2.3
+    created: "2023-12-06T17:38:08.685594959Z"
+    description: A Helm chart for Kubernetes
+    digest: 5c8829dcffa564d70f9e1b51eebbd2bff966c72782a7bdfe36229cd2013ee1cc
+    name: gabs-redis-harness
+    type: application
+    urls:
+    - https://github.com/gacerioni/gabs-harness-redis-k8s/releases/download/gabs-redis-harness-3.1.0-gabs/gabs-redis-harness-3.1.0-gabs.tgz
+    version: 3.1.0-gabs
+  - apiVersion: v2
+    appVersion: 7.2.3
     created: "2023-12-06T17:30:14.763221617Z"
     description: A Helm chart for Kubernetes
     digest: 05686a9a05d6d0f18b5e20652bcbf12a0a3ee9c11a272d3409e1de8991a14a69
@@ -61,4 +71,4 @@ entries:
     urls:
     - https://github.com/gacerioni/gabs-harness-redis-k8s/releases/download/gabs-redis-harness-0.1.1/gabs-redis-harness-0.1.1.tgz
     version: 0.1.1
-generated: "2023-12-06T17:30:14.763257965Z"
+generated: "2023-12-06T17:38:08.685633591Z"
