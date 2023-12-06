@@ -6,7 +6,7 @@ service:
 # now we use the nginx ingress - should I not hardcore the className ingress.class?
 ingress:
   enabled: true
-  className: "k8s.io/ingress-nginx"
+  className: "nginx"
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
   hosts:
