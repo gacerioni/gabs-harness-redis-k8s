@@ -1,7 +1,8 @@
 # using NodePort this time until I get my domain back
-
-
-
+service:
+  type: NodePort
+  port: 6379
+  nodePort: 30099
 
 # because we will roll with nginx ingress this time
 service:
