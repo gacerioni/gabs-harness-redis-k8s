@@ -5,9 +5,9 @@ service:
   nodePort: 30099
 
 # because we will roll with nginx ingress this time
-service:
-  type: ClusterIP
-  port: 6379
+#service:
+#  type: ClusterIP
+#  port: 6379
 
 # now we use the nginx ingress - should I not hardcore the className ingress.class?
 ingress:
