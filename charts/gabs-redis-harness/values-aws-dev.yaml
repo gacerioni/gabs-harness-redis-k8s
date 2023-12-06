@@ -9,7 +9,8 @@ ingress:
   className: "nginx"
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-passthrough: "true"
   hosts:
     - paths:
-        - path: /redisgabs
+        - path: /redis
           pathType: Prefix
