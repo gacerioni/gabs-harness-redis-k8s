@@ -54,7 +54,7 @@ spec:
         emptyDir: {}
       - name: config
         configMap:
-          name: {{ include "gabs-redis-harness.fullname" . }}
+          name: redis-configmap
           items:
           - key: redis-config
             path: redis.conf
