@@ -1,0 +1,15 @@
+# because we will roll with nginx ingress this time
+service:
+  type: ClusterIP
+  port: 6379
+
+# now we use the nginx ingress - should I not hardcore the className ingress.class?
+ingress:
+  enabled: true
+  className: "k8s.io/ingress-nginx"
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  hosts:
+    - paths:
+        - path: /redisgabs
+          pathType: Prefix
