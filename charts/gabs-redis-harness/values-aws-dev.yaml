@@ -1,3 +1,8 @@
+# using NodePort this time until I get my domain back
+
+
+
+
 # because we will roll with nginx ingress this time
 service:
   type: ClusterIP
@@ -5,7 +10,7 @@ service:
 
 # now we use the nginx ingress - should I not hardcore the className ingress.class?
 ingress:
-  enabled: true
+  enabled: false
   className: "nginx"
   annotations:
     nginx.ingress.kubernetes.io/ssl-passthrough: "true"
