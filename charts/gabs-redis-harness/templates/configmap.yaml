@@ -10,3 +10,6 @@ data:
     {{- if .Values.master.password }}
     requirepass {{ .Values.master.password }}
     {{- end }}
+    {{- if .Values.enableRedisTimeSeries }}
+    loadmodule ./redistimeseries.so
+    {{- end }}    
