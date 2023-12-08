@@ -11,5 +11,5 @@ data:
     requirepass {{ .Values.master.password }}
     {{- end }}
     {{- if .Values.enableRedisTimeSeries }}
-    loadmodule ./redistimeseries.so
+    loadmodule /opt/redis-stack/lib/redistimeseries.so
     {{- end }}    
