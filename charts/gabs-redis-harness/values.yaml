@@ -27,7 +27,7 @@ service:
 
 # this is a default pwd, but we will override with Harness capabilities (no vendor lockin, just values yaml overrides)
 master:
-  password: ""
+  password: <+pipeline.variables.REDIS_PWD>
 persistence:
   enabled: true
 
